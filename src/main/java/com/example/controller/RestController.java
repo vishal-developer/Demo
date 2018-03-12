@@ -25,15 +25,7 @@ public class RestController {
 	}
 	
 	
-	@RequestMapping(value = "/getAllUser", method = RequestMethod.GET)
-	public List<User> getAll(){
-		return userService.getAllUsers();
-	}
 	
-	@RequestMapping(value = "/", method = RequestMethod.POST)
-	public User saveUser(@RequestBody User user){
-		return userService.saveUser(user);
-	}
 	
 	
 	
